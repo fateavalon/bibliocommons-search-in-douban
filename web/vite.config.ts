@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/douban-bibliocommons-rating/",
+  base: "/bibliocommons-search-in-douban/",
 });
