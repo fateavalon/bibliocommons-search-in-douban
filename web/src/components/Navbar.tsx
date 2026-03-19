@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.inner}>
-        <span className={styles.brand}>中文图书豆瓣评分</span>
+        <span className={styles.brand}>湾区图书馆中文图书</span>
         <div className={styles.links}>
           <NavLink
             to="/"
