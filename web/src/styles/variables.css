@@ -1,0 +1,9 @@
+:root {
+  --bg: #fafafa; --card: #fff; --border: #e5e7eb; --text: #1f2937;
+  --text2: #6b7280; --accent: #2563eb;
+  --badge-ex: #166534; --badge-ex-bg: #dcfce7;
+  --badge-gr: #1e40af; --badge-gr-bg: #dbeafe;
+  --badge-gd: #92400e; --badge-gd-bg: #fef3c7;
+  --badge-ok: #9a3412; --badge-ok-bg: #ffedd5;
+  --badge-lo: #991b1b; --badge-lo-bg: #fee2e2;
+}

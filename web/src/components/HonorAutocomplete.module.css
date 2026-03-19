@@ -1,0 +1,22 @@
+.wrap { position: relative; }
+.input {
+  width: 100%; box-sizing: border-box;
+  padding: 5px 8px; border: 1px solid var(--border); border-radius: 4px;
+  font-size: 0.8rem; background: var(--card); color: var(--text);
+  outline: none;
+}
+.input:focus { border-color: var(--accent); }
+.dropdown {
+  position: absolute; left: 0; top: 100%; width: 100%;
+  max-height: 240px; overflow-y: auto; background: var(--card);
+  border: 1px solid var(--border); border-top: none; border-radius: 0 0 4px 4px;
+  z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.item {
+  padding: 6px 10px; font-size: 0.8rem; cursor: pointer;
+  color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.item:hover, .active { background: var(--accent); color: #fff; }
+.count { color: var(--text2); font-size: 0.72rem; margin-left: 4px; }
+.item:hover .count, .active .count { color: rgba(255,255,255,0.7); }
+.empty { padding: 6px 10px; font-size: 0.8rem; color: var(--text2); cursor: default; }

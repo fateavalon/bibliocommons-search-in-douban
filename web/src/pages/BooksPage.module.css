@@ -1,0 +1,17 @@
+.container { max-width: 1260px; margin: 0 auto; padding: 20px 16px; }
+.subtitle {
+  text-align: center; color: var(--text2); font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+.toolbar {
+  display: flex; gap: 8px; margin-bottom: 16px;
+  flex-wrap: wrap; align-items: center; justify-content: space-between;
+}
+.pageSize {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 0.8rem; color: var(--text2);
+}
+.pageSize select {
+  padding: 4px 8px; border: 1px solid var(--border); border-radius: 4px;
+  font-size: 0.8rem; background: var(--card); color: var(--text); cursor: pointer;
+}

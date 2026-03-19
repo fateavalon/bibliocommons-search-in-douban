@@ -1,0 +1,12 @@
+.container { max-width: 1260px; margin: 0 auto; padding: 24px 16px 48px; }
+.hero { text-align: center; margin-bottom: 36px; padding: 20px 0; }
+.hero h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+.hero p { color: var(--text2); font-size: 0.875rem; }
+.tagSection { margin-bottom: 36px; }
+.sectionTitle {
+  font-size: 1.15rem; font-weight: 700; color: var(--text);
+  margin-bottom: 14px;
+}
+.tagCloud { display: flex; flex-wrap: wrap; gap: 8px; }
+.tagLink { text-decoration: none; cursor: pointer; }
+.tagLink:hover { opacity: 0.85; }

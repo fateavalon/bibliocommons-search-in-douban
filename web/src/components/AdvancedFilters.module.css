@@ -1,0 +1,53 @@
+.panel {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 8px; padding: 16px; margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px 20px; align-items: end;
+}
+.group { display: flex; flex-direction: column; gap: 4px; }
+.group label {
+  font-size: 0.75rem; font-weight: 600; color: var(--text2);
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.rangeRow { display: flex; align-items: center; gap: 6px; }
+.group input[type="number"] {
+  width: 72px; padding: 5px 8px; border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.8rem; outline: none;
+  -moz-appearance: textfield;
+}
+.group input[type="number"]::-webkit-inner-spin-button { opacity: 1; }
+.group input:focus { border-color: var(--accent); }
+.group select {
+  padding: 5px 8px; border: 1px solid var(--border); border-radius: 4px;
+  font-size: 0.8rem; background: var(--card); color: var(--text);
+  cursor: pointer; max-width: 200px;
+}
+.checkRow { display: flex; align-items: center; gap: 6px; height: 30px; }
+.group input[type="checkbox"] {
+  width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent);
+}
+.checkLabel { font-size: 0.8rem; color: var(--text); cursor: pointer; }
+.sep { color: var(--text2); font-size: 0.8rem; }
+.actions {
+  display: flex; gap: 8px; margin-top: 12px; padding-top: 12px;
+  border-top: 1px solid var(--border); justify-content: flex-end;
+}
+.actions button {
+  padding: 6px 16px; border-radius: 6px; font-size: 0.8rem;
+  cursor: pointer; transition: all 0.15s;
+}
+.btnClear {
+  border: 1px solid var(--border); background: var(--card); color: var(--text2);
+}
+.btnClear:hover { border-color: #ef4444; color: #ef4444; }
+.btnApply {
+  border: 1px solid var(--accent); background: var(--accent); color: #fff;
+}
+.btnApply:hover { background: #1d4ed8; }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}

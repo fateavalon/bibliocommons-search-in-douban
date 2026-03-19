@@ -1,0 +1,29 @@
+.row {
+  display: flex; gap: 8px; margin-bottom: 8px;
+  flex-wrap: wrap; align-items: center;
+}
+.input {
+  flex: 1; min-width: 200px; padding: 8px 12px;
+  border: 1px solid var(--border); border-radius: 6px;
+  font-size: 0.875rem; outline: none;
+}
+.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37,99,235,.15);
+}
+.stats { color: var(--text2); font-size: 0.8rem; white-space: nowrap; }
+.toggle {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--card); color: var(--text2); font-size: 0.8rem;
+  cursor: pointer; transition: all 0.15s; user-select: none;
+}
+.toggle:hover { border-color: var(--accent); color: var(--accent); }
+.open { border-color: var(--accent); color: var(--accent); background: rgba(37,99,235,.04); }
+.arrow { font-size: 0.6rem; transition: transform 0.2s; }
+.open .arrow { transform: rotate(180deg); }
+.badge {
+  min-width: 18px; height: 18px; line-height: 18px;
+  text-align: center; border-radius: 9px; font-size: 0.65rem; font-weight: 700;
+  background: var(--accent); color: #fff; margin-left: 2px;
+}

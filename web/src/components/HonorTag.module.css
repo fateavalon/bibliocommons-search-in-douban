@@ -1,0 +1,8 @@
+.tag {
+  display: inline-block; margin-left: 6px; padding: 1px 7px;
+  border-radius: 3px; font-size: 0.68rem; font-weight: 600;
+  vertical-align: middle; line-height: 1.5; cursor: pointer;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  color: #92400e; border: 1px solid #f59e0b;
+  white-space: nowrap;
+}

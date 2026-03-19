@@ -1,0 +1,9 @@
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.02em;
+}
+.badge-excellent { color: var(--badge-ex); background: var(--badge-ex-bg); }
+.badge-great     { color: var(--badge-gr); background: var(--badge-gr-bg); }
+.badge-good      { color: var(--badge-gd); background: var(--badge-gd-bg); }
+.badge-ok        { color: var(--badge-ok); background: var(--badge-ok-bg); }
+.badge-low       { color: var(--badge-lo); background: var(--badge-lo-bg); }
