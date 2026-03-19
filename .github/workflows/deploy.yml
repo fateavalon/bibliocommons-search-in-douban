@@ -32,7 +32,7 @@ jobs:
       - run: npm run build
         working-directory: web
         env:
-          VITE_IMG_PROXY_BASE: https://img.fateacher.com/
+          VITE_IMG_PROXY_BASE: https://douban-img.fateacher.com/
 
       - uses: actions/upload-pages-artifact@v3
         with:
