@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:cf": "VITE_BASE=/ tsc && vite build",
+    "build:gh": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
