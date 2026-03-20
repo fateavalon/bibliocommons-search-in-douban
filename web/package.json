@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:cf": "VITE_BASE=/ tsc && vite build",
-    "build:gh": "tsc && vite build",
+    "build:cf": "tsc && VITE_BASE=/ vite build",
+    "build:gh": "tsc && VITE_BASE=/bibliocommons-search-in-douban/ vite build",
     "preview": "vite preview"
   },
   "dependencies": {
