@@ -33,6 +33,7 @@ jobs:
         working-directory: web
         env:
           VITE_IMG_PROXY_BASE: https://douban-img.fateacher.com/
+          VITE_SITE_URL: https://fateavalon.github.io/bibliocommons-search-in-douban
 
       - uses: actions/upload-pages-artifact@v3
         with:

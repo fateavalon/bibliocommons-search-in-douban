@@ -60,6 +60,19 @@
 - 构建：`npm run build`
 - 部署到 GitHub Pages 的工作流见 `.github/workflows/deploy.yml`
 
+### SEO（静态 SPA，HashRouter）
+
+路由使用 `HashRouter`（`#/`、`#/recommend`），**fragment 不会发给服务器**，因此 sitemap 只能覆盖主文档 URL（`/`），无法像 `BrowserRouter` 那样为每个路径单独列出 sitemap 条目。若需要更强的“多页面”收录与分享预览，后续需要迁移到 `BrowserRouter` 并在托管侧配置 SPA fallback。
+
+构建时会：
+
+- 在 `index.html` 里写入 `meta description`、Open Graph、Twitter Card、`canonical` 与 `og:image`（图片为 `public/og.png`）。
+- 在 `dist/` 写入 `robots.txt` 与 `sitemap.xml`（内容由 `web/vite-seo-plugin.ts` 生成）。
+
+**Canonical / sitemap 的站点地址**由构建环境变量 **`VITE_SITE_URL`** 决定（无尾部斜杠），默认与 GitHub Pages 项目站一致。部署到 Cloudflare Pages 或其它域名时，请在构建环境设置 `VITE_SITE_URL`（例如 `https://xxx.pages.dev`），并参考 `web/.env.example`。
+
+提交站点地图：在 Google Search Console 等工具中提交 `https://<你的域名>/sitemap.xml`（与 `VITE_SITE_URL` 一致）。
+
 ## 其他文件
 
 - `CHANGELOG.md`：脚本更新日志
